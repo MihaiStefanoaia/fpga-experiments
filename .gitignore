@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+# vivado project files
+/projects/*/*.cache/*
+/projects/*/*.gen/*
+/projects/*/*.hw/*
+/projects/*/*.runs/*

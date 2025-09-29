@@ -1,0 +1,73 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF6BD49E8F6BD49E8",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../hello_zynq.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "my_and_0": ""
+    },
+    "ports": {
+      "pin_a": {
+        "direction": "I"
+      },
+      "pin_b": {
+        "direction": "I"
+      },
+      "pin_o": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "my_and_0": {
+        "vlnv": "xilinx.com:module_ref:my_and:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_my_and_0_0",
+        "xci_path": "ip\\design_1_my_and_0_0\\design_1_my_and_0_0.xci",
+        "inst_hier_path": "my_and_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "my_and",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "o": {
+            "direction": "O"
+          },
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "nets": {
+      "a_0_1": {
+        "ports": [
+          "pin_a",
+          "my_and_0/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "pin_b",
+          "my_and_0/b"
+        ]
+      },
+      "my_and_0_o": {
+        "ports": [
+          "my_and_0/o",
+          "pin_o"
+        ]
+      }
+    }
+  }
+}
